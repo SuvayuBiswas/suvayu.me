@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* Custom styles AFTER Tailwind */
+html {
+  scroll-behavior: smooth;
+}
+
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+}
+
+.reveal-visible {
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+@keyframes underline {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+.reveal-visible .underline-reveal {
+  animation: underline 0.6s ease-out forwards;
+  animation-delay: 0.35s;
+}
+
