@@ -5,22 +5,28 @@ export default function useReveal() {
 
   useEffect(() => {
     const element = ref.current;
-    if (!element) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          element.classList.add("reveal-visible");
-          observer.unobserve(element);
-        }
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            element.classList.add("reveal-visible");
+          } else {
+            const rect = entry.boundingClientRect;
+
+            if (rect.top > window.innerHeight) {
+              return;
+            }
+            element.classList.remove("reveal-visible");
+          }
+        });
       },
       {
-        threshold: 0.15,
+        threshold: 0.2,
       }
     );
 
-    observer.observe(element);
-
+    if (element) observer.observe(element);
     return () => observer.disconnect();
   }, []);
 
