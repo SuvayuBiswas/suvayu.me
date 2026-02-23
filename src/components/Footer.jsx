@@ -54,7 +54,7 @@ function Footer() {
 
       {/* Bottom line */}
       <div className="text-center text-xs text-gray-400 pb-6">
-        © {new Date().getFullYear()} Suvayu Biswas. Built with React & Tailwind CSS.
+        © {new Date().getFullYear()} Suvayu Biswas.
       </div>
     </footer>
   );

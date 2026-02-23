@@ -27,7 +27,7 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop /> {/* 👈 THIS LINE FIXES IT */}
+      <ScrollToTop />
 
       <Navbar />
 

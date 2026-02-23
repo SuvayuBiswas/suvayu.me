@@ -16,9 +16,9 @@ function Contact() {
         </h2>
 
         <p className="mt-4 max-w-2xl text-gray-600">
-          I’m currently open to internship opportunities, collaborations,
+          I'm currently open to internship opportunities, collaborations,
           and meaningful discussions around software development and AI/ML.
-          Feel free to reach out if you’d like to connect.
+          Feel free to reach out if you'd like to connect.
         </p>
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

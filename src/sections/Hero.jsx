@@ -69,7 +69,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* Bottom fade */}
       <div className="pointer-events-none absolute bottom-0 left-0 h-20 w-full bg-linear-to-b from-transparent to-white" />
     </section>
   );
