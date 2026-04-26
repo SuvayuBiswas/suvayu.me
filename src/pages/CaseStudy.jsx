@@ -16,7 +16,7 @@ function CaseStudy() {
                     Designing a lightweight deep learning system for automated brain tumor
                     classification from MRI images.
                 </p>
-            </section>
+            </section> 
 
             {/* Overview */}
             <section className="mt-14">
